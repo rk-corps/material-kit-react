@@ -10,6 +10,7 @@ BlogPostsSort.propTypes = {
 };
 
 export default function BlogPostsSort({ options, onSort }) {
+  console.log(options)
   return (
     <TextField select size="small" value="latest" onChange={onSort}>
       {options.map((option) => (
